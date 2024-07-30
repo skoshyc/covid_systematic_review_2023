@@ -5,3 +5,4 @@ The R packages meta  (Balduzzi S, Rücker G, Schwarzer G (2019), How to perform 
 The code details are as follows:
 Each of the codes COVID_SR_measure_name (where measure_name can be either sensitivity, specificity, PPV or NPV) calculates the pooled values and generates the forest plots for the Overall, Symptomatic and Asymptomatic subgroups. The code also calculates the total sample numbers to include in the GRADE Pro software.
 
+The Master File of Data extraction_New.xlsx is the data sheet used in all the codes. 
