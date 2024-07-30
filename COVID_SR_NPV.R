@@ -58,22 +58,22 @@ outlier=find.outliers(NPV_logit_test_subgp)
 print(outlier)
 
 new_subset=subset_group[!(subset_group$Identifier %in%
-                            c("Abusrewil, et. al. Dec 2021", "Amer, et. al. Oct 2021", 
+                            c("Abusrewil, et. al. Dec 2021", 
                               "Boum, et. al. May 2021", "Cerutti, et. al. Aug 2021", 
                               "Fernandez-Montero, et. al. July 2021", "Holzner, et. al. April 2021", 
                               "Jakobsen, et. al. June 2021", "Krüger, et. al. May 2021", 
                               "Pilarowski, et. al. Jan 2021", "Pollock, et. al. Apr 2021", 
-                              "Turcato, et. al. Dec 2020", "Allan-Blitz, et. al. Sep 2021", 
-                              "Amer, et. al.Mar 2022", "Cottone, et. al. May 2022", 
-                              "Garcia-Cardenas, et. al. May 2022a", "Freire, et. al. Jun 2022", 
-                              "Jakobsen, et. al. Oct 2021", "Jeewandara, et. al. Mar 2022",
+                              "Turcato, et. al. March 2021", "Allan-Blitz, et. al. Sep 2021", 
+                              "Amer, et. al. Mar 2022", "Cottone, et. al. May 2022", 
+                              "Garcia-Cardenas, et. al. Sep 2021", "Freire, et. al. Jun 2022", 
+                              "Jakobsen, et. al. Feb 2022", "Jeewandara, et. al. Mar 2022",
                               "King, et. al. Sep 2021", "Krüger, et. al. Dec 2021", 
                               "Landaverde, et. al. Mar 2022", "Layer, et. al. Feb 2022", 
-                              "Okoye, et. al. Oct 2021", "Raja Kamran, et. al. Sep 2021", 
+                              "Okoye, et. al. Feb 2022", "Afzal, et. al. Sep 2021", 
                               "Rohde, et. al. Feb 2022", "Nóra, et. al. Feb 2022", "Nóra, et. al. Feb 2022", 
                               "Siddiqui, et. al. Dec 2021", "Sitoe, et. al. Feb 2022", 
                               "Surasi, et. al. Nov 2021", "Thell, et. al. Nov 2021", "Thirion-Romero, et. al. Oct 2021", 
-                              "Turcato, et. al. Jan 2022", "von Ahnen, et. al. Sep 2021" )),]
+                              "Turcato, et. al. Jan 2022", "von Ahnen, et. al. Mar 2022","Afzal, et al. Sep 2021")),]
 NPV_logit_test_subgp_new <- metaprop(new_subset$TN, new_subset$TN+new_subset$FN, 
                                      comb.fixed = FALSE, comb.random = TRUE,
                                      sm = "PLOGIT", method.ci = "CP", 
